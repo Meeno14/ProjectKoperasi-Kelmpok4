@@ -1,13 +1,88 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.category-active {
+  background-color: #212529;
+  color: rgba(255, 255, 255, 0.55);
+}
+.hasil {
+  height: 650px;
+}
+.overflow-auto::-webkit-scrollbar {
+  display: none;
+}
+.images {
+  width: 100%;
+  object-fit: cover;
+}
+.car-img {
+  height: 500px;
+  object-fit: cover;
+}
+.item {
+  border: solid 2px white;
+  margin: 0 30px;
+  padding-bottom: 30px;
+}
+.item:hover {
+  border: solid 2px #212529;
+}
+.order {
+  display: none;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  padding: 0 10px;
+}
+.order button {
+  width: 100%;
+}
+.item:hover .order {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: black;
+}
+.jumlah {
+  width: 50px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.nav-link {
+  color: rgba(255, 255, 255, 0.55);
+}
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+.nav-link:focus {
+  color: #fff;
+}
+.table-images {
+  width: 100px;
+}
+.cart {
+  font-size: larger;
+}
+.order-list {
+  line-height: 30px;
+}
+.All {
+  background-color: #212529;
+  color: white;
+  padding: 20px;
 }
