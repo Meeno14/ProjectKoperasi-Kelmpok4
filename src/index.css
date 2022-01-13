@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-top: 56px;
 }
 .category-active {
   background-color: #212529;
@@ -27,7 +28,6 @@ body {
 .item {
   border: solid 2px white;
   margin: 0 30px;
-  padding-bottom: 30px;
 }
 .item:hover {
   border: solid 2px #212529;
@@ -79,10 +79,158 @@ input[type="number"] {
   font-size: larger;
 }
 .order-list {
-  line-height: 30px;
+  line-height: 35px;
 }
 .All {
   background-color: #212529;
   color: white;
   padding: 20px;
+}
+html {
+  width: 100%;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+body,
+button {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+}
+
+/* ICON BACKGROUND */
+.icon-back {
+  position: relative;
+  font-weight: 900;
+}
+.pencil:before {
+  content: "\f5ae";
+}
+.coin:before {
+  content: "\f51e";
+}
+.money:before {
+  content: "\f3d1";
+}
+.icon-back::before {
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  top: auto;
+  left: auto;
+  right: 0;
+  bottom: -30%;
+  font-size: 800%;
+  opacity: 0.15;
+}
+
+/* 2ND DARK BUTTON */
+.btn-dark2 {
+  color: #fff;
+  background-color: #2c3034;
+  border-color: #2c3034;
+}
+.btn-dark2:hover {
+  background-color: #323539;
+  border-color: #323539;
+}
+.btn-dark2:focus {
+  outline: 0;
+  background-color: #22262b;
+  border-color: #1e2225;
+  box-shadow: 0 0 0 0.25rem rgba(76, 80, 83, 0.5);
+}
+.btn-dark2:active {
+  background-color: #212529;
+  border-color: #212529;
+}
+
+/* LOGIN PAGE */
+.form-container {
+  background: linear-gradient(#222, #333);
+  font-family: "Roboto", sans-serif;
+  font-size: 0;
+  padding: 0 15px;
+  border: 1px solid #222;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.form-container .form-icon {
+  width: 50%;
+  padding: 50px 0;
+  vertical-align: top;
+  display: inline-block;
+  color: #fff;
+}
+.form-container .form-horizontal {
+  background: rgba(255, 255, 255, 0.99);
+  width: 50%;
+  padding: 60px 30px;
+  margin: -20px 0;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+.form-container .title {
+  color: #454545;
+  font-size: 23px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  margin: 0 0 30px 0;
+}
+.form-horizontal .form-group {
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 0 0 15px;
+  border: 1px solid #b5b5b5;
+  border-radius: 20px;
+}
+.form-horizontal .form-control {
+  background-color: transparent;
+  letter-spacing: 1px;
+  height: 33px;
+  padding: 0 15px;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.form-horizontal .form-control::placeholder {
+  color: #b5b5b5;
+  font-size: 13px;
+  text-transform: capitalize;
 }

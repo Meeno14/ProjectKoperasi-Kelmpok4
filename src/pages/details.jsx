@@ -1,8 +1,8 @@
 import { Col, Row, Button } from "react-bootstrap";
-import { numberWithCommas } from "../utils/utils";
+import { numberWithCommas } from "../components/utils/utils";
 import React, { Component } from "react";
 import axios from "axios";
-import { API_URL } from "../utils/constants";
+import { API_URL } from "../components/utils/constants";
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import swal from "sweetalert";
@@ -118,12 +118,12 @@ export class details extends Component {
                 <img
                   src={
                     "Assets/" +
-                    detail.category.nama.toLowerCase() +
+                    detail.category.toLowerCase() +
                     "/" +
                     detail.gambar
                   }
                   alt="."
-                  class="images"
+                  className="images"
                 />
               </Col>
               <Col className="col-6 col-md-4">

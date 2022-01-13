@@ -3,25 +3,9 @@ import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import { API_URL } from "../utils/constants";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faIceCream,
-  faCoffee,
-  faPencilRuler,
-  faShoppingCart,
-} from "@fortawesome/free-solid-svg-icons";
-
-const Icon = ({ nama }) => {
-  if (nama === "Makanan")
-    return <FontAwesomeIcon icon={faIceCream} className="mr-2" />;
-  if (nama === "Minuman")
-    return <FontAwesomeIcon icon={faCoffee} className="mr-2" />;
-  if (nama === "Peralatan")
-    return <FontAwesomeIcon icon={faPencilRuler} className="mr-2" />;
-  return <FontAwesomeIcon icon={faIceCream} className="mr-2" />;
-};
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 export default class ListCategories extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -37,18 +21,22 @@ export default class ListCategories extends Component {
       })
   }
 
+  toCategory = (category) => {
+    localStorage.setItem("choosedCategory", category)
+  }
+
   render() {
     const { categories } = this.state;
     return (
       <div>
         <Navbar
           variant="dark"
-          style={{ backgroundColor: "#212529" }}
-          expand="lg"
+          bg="dark"
+          className="fixed-top"
         >
           <Container>
-            <Navbar.Brand href="/">
-              <strong>Koperasi</strong>
+            <Navbar.Brand href="/" className="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold">
+              {this.props.title}
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -60,9 +48,10 @@ export default class ListCategories extends Component {
                       <NavDropdown.Item
                         style={{ cursor: "pointer" }}
                         key={category.id}
-                        href={"/categories#" + category.nama.toLowerCase()}
+                        href="/categories"
+                        onClick={() => this.toCategory(category.nama)}
                       >
-                        <Icon nama={category.nama} /> {category.nama}
+                        <i className={"fas fa-" + category.icon} /> {category.nama}
                       </NavDropdown.Item>
                     ))}
                 </NavDropdown>

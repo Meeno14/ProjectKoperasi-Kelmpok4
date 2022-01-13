@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Stepper from "../components/stepper";
+import Stepper from "../components/costumer/stepper";
 
 export class keranjang extends Component {
   render() {

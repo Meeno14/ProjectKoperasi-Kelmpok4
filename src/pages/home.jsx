@@ -1,26 +1,27 @@
 import axios from "axios";
 import React, { Component } from "react";
 import swal from "sweetalert";
-import Categories from "../components/category";
-import { API_URL } from "../utils/constants";
+import Carousel from "../components/costumer/carousel";
+import Menus from "../components/costumer/menus";
+import { API_URL } from "../components/utils/constants";
 
 export class home extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       items: [],
-      categories: []
+      carousel: []
     };
   }
-  delay = ms => new Promise(res => setTimeout(res, ms));
   componentDidMount() {
     axios.get(API_URL + "products").then((res) => {
       const items = res.data;
       this.setState({ items });
     });
-    axios.get(API_URL + "categories").then((res) => {
-      const categories = res.data;
-      this.setState({ categories });
+    axios.get(API_URL + "carousel").then((res) => {
+      const carousel = res.data;
+      this.setState({ carousel });
     });
   }
 
@@ -69,21 +70,21 @@ export class home extends Component {
       gambar: product.gambar,
       category: product.category,
     };
-    axios.get(API_URL + "details").then((res) =>
-      axios.put(API_URL + "details/" + res.data[0].id, payload).then((res) => {
-        window.location.href = "/details";
-      })
-    );
+    axios.put(API_URL + "details/1", payload).then((res) => {
+      window.location.href = "/details";
+    });
   };
   render() {
-    const { items, categories } = this.state;
+    const { items, carousel } = this.state;
     return (
       <div>
-        <Categories
+        <Carousel
+          carousel={carousel}
+        />
+        <Menus
           itemDetail={this.itemDetail}
           masukKeranjang={this.masukKeranjang}
           items={items}
-          categories={categories}
         />
       </div>
     );

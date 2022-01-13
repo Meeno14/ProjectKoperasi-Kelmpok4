@@ -1,198 +1,459 @@
 {
-  "categories": [
-    {
-      "id": 1,
-      "nama": "Snack"
-    },
-    {
-      "id": 2,
-      "nama": "Minuman"
-    },
-    {
-      "id": 3,
-      "nama": "Peralatan"
-    }
-  ],
   "products": [
     {
       "id": 1,
       "nama": "Permen",
       "harga": 1000,
       "gambar": "permen.jpg",
-      "category": {
-        "id": 1,
-        "nama": "Snack"
-      }
+      "category": "Snack"
     },
     {
       "id": 2,
       "nama": "Kokolatos",
       "harga": 2000,
       "gambar": "kakaolatos.jpg",
-      "category": {
-        "id": 1,
-        "nama": "Snack"
-      }
+      "category": "Snack"
     },
     {
       "id": 3,
       "nama": "Bolu",
       "harga": 1500,
       "gambar": "bolu.jpg",
-      "category": {
-        "id": 1,
-        "nama": "Snack"
-      }
+      "category": "Snack"
     },
     {
       "id": 4,
       "nama": "Gorengan",
       "harga": 1000,
       "gambar": "gorengan.jpg",
-      "category": {
-        "id": 1,
-        "nama": "Snack"
-      }
+      "category": "Snack"
     },
     {
       "id": 5,
       "nama": "Bang Bang",
       "harga": 2000,
       "gambar": "bang-bang.jpg",
-      "category": {
-        "id": 1,
-        "nama": "Snack"
-      }
+      "category": "Snack"
     },
     {
       "id": 6,
       "nama": "Chicken Balls",
       "harga": 1000,
       "gambar": "cock-balls.jpg",
-      "category": {
-        "id": 1,
-        "nama": "Snack"
-      }
+      "category": "Snack"
     },
     {
       "id": 8,
       "nama": "Buku Gambar",
       "harga": 3000,
       "gambar": "buku-gambar.jpg",
-      "category": {
-        "id": 3,
-        "nama": "Peralatan"
-      }
+      "category": "Peralatan"
     },
     {
       "id": 9,
       "nama": "Buku Tulis",
       "harga": 1500,
       "gambar": "buku-tulis.jpg",
-      "category": {
-        "id": 3,
-        "nama": "Peralatan"
-      }
+      "category": "Peralatan"
     },
     {
       "id": 10,
       "nama": "Penggaris",
       "harga": 2000,
       "gambar": "penggaris.jpg",
-      "category": {
-        "id": 3,
-        "nama": "Peralatan"
-      }
+      "category": "Peralatan"
     },
     {
       "id": 11,
       "nama": "Jangka",
       "harga": 3000,
       "gambar": "jangka.jpg",
-      "category": {
-        "id": 3,
-        "nama": "Peralatan"
-      }
+      "category": "Peralatan"
     },
     {
       "id": 12,
       "nama": "Pulpen",
       "harga": 1500,
       "gambar": "pulpen.jpg",
-      "category": {
-        "id": 3,
-        "nama": "Peralatan"
-      }
+      "category": "Peralatan"
     },
     {
       "id": 13,
       "nama": "Pensil",
       "harga": 1500,
       "gambar": "pensil.jpg",
-      "category": {
-        "id": 3,
-        "nama": "Peralatan"
-      }
+      "category": "Peralatan"
     },
     {
       "id": 14,
       "nama": "Susu Kotak",
       "harga": 3000,
       "gambar": "susu-kotak.jpg",
-      "category": {
-        "id": 1,
-        "nama": "Minuman"
-      }
+      "category": "Minuman"
     },
     {
       "id": 15,
       "nama": "Air Mineral",
       "harga": 2500,
       "gambar": "water.jpg",
-      "category": {
-        "id": 1,
-        "nama": "Minuman"
-      }
+      "category": "Minuman"
     },
     {
       "id": 16,
       "nama": "Soda",
       "harga": 3500,
       "gambar": "soda.jpg",
-      "category": {
-        "id": 1,
-        "nama": "Minuman"
-      }
+      "category": "Minuman"
     },
     {
       "id": 17,
       "nama": "Froot Tea",
       "harga": 3000,
       "gambar": "froot-tea.jpg",
-      "category": {
-        "id": 1,
-        "nama": "Minuman"
-      }
+      "category": "Minuman"
     },
     {
       "id": 18,
       "nama": "Es Teh",
       "harga": 1000,
       "gambar": "es-teh.jpg",
-      "category": {
-        "id": 1,
-        "nama": "Minuman"
-      }
+      "category": "Minuman"
     }
   ],
   "keranjangs": [],
+  "pemesan": {
+    "nama": "",
+    "catatan": ""
+  },
+  "details": [
+    {
+      "item_id": 4,
+      "nama": "Gorengan",
+      "harga": 1000,
+      "gambar": "gorengan.jpg",
+      "category": "Snack",
+      "id": 1
+    }
+  ],
+  "admin": [
+    {
+      "username": "admin",
+      "password": "12345678"
+    }
+  ],
+  "web_profile": [
+    {
+      "id": 1,
+      "email": "dummy.email@gmail.com",
+      "number": "4529304789",
+      "address": "Jl.Kesurga 2",
+      "website": "http://localhost:3000",
+      "name": "Koperasus",
+      "description": "Koperasi sekolah adalah koperasi yang didirikan di lingkungan sekolah yang anggota-anggotanya terdiri atas siswa sekolah. Koperasi sekolah dapat didirikan pada berbagai tingkatan sesuai jenjang pendidikan, misalnya koperasi sekolah dasar, koperasi sekolah menengah pertama, dan seterusnya. Adapun koperasi sekolah juga dapat dimaknai sebagai koperasi yang berada pada lembaga pendidikan lain, selain pendidikan formal, seperti yayasan, lembaga masyarakat, pesantren, dll"
+    }
+  ],
+  "carousel": [
+    {
+      "category": "snack",
+      "image": "permen.jpg",
+      "id": 3
+    },
+    {
+      "category": "snack",
+      "image": "cock-balls.jpg",
+      "id": 4
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "nama": "Snack",
+      "icon": "ice-cream"
+    },
+    {
+      "nama": "Minuman",
+      "icon": "fas fa-coffee",
+      "id": 2
+    },
+    {
+      "nama": "Peralatan",
+      "icon": "fas fa-blind",
+      "id": 3
+    }
+  ],
   "pesanans": [
     {
-      "pemesan": "s",
-      "absen": 1,
-      "catatan": "s",
-      "harga_total": 4000,
-      "item": [
+      "pemesan": "Budi",
+      "catatan": "Mendoan Tiga",
+      "harga_total": 25000,
+      "bayar": true,
+      "tanggal": 6,
+      "bulan": 3,
+      "tahun": 2022,
+      "items": [
+        {
+          "jumlah": 4,
+          "total_harga": 12000,
+          "product": {
+            "id": 8,
+            "nama": "Buku Gambar",
+            "harga": 3000,
+            "gambar": "buku-gambar.jpg",
+            "category": "Peralatan"
+          },
+          "id": 1
+        },
+        {
+          "jumlah": 4,
+          "total_harga": 6000,
+          "product": {
+            "id": 9,
+            "nama": "Buku Tulis",
+            "harga": 1500,
+            "gambar": "buku-tulis.jpg",
+            "category": "Peralatan"
+          },
+          "id": 2
+        },
+        {
+          "jumlah": 7,
+          "total_harga": 7000,
+          "product": {
+            "id": 4,
+            "nama": "Gorengan",
+            "harga": 1000,
+            "gambar": "gorengan.jpg",
+            "category": "Snack"
+          },
+          "id": 3
+        }
+      ],
+      "id": 1
+    },
+    {
+      "pemesan": "Andi",
+      "catatan": "",
+      "harga_total": 22000,
+      "bayar": true,
+      "tanggal": 6,
+      "bulan": 1,
+      "tahun": 2022,
+      "items": [
+        {
+          "jumlah": 3,
+          "total_harga": 6000,
+          "product": {
+            "id": 2,
+            "nama": "Kokolatos",
+            "harga": 2000,
+            "gambar": "kakaolatos.jpg",
+            "category": "Snack"
+          },
+          "id": 1
+        },
+        {
+          "jumlah": 8,
+          "total_harga": 8000,
+          "product": {
+            "id": 1,
+            "nama": "Permen",
+            "harga": 1000,
+            "gambar": "permen.jpg",
+            "category": "Snack"
+          },
+          "id": 2
+        },
+        {
+          "jumlah": 4,
+          "total_harga": 8000,
+          "product": {
+            "id": 5,
+            "nama": "Bang Bang",
+            "harga": 2000,
+            "gambar": "bang-bang.jpg",
+            "category": "Snack"
+          },
+          "id": 3
+        }
+      ],
+      "id": 2
+    },
+    {
+      "pemesan": "Jordy",
+      "catatan": "",
+      "harga_total": 32500,
+      "bayar": true,
+      "tanggal": 6,
+      "bulan": 2,
+      "tahun": 2022,
+      "items": [
+        {
+          "jumlah": "12",
+          "total_harga": 12000,
+          "product": {
+            "id": 6,
+            "nama": "Chicken Balls",
+            "harga": 1000,
+            "gambar": "cock-balls.jpg",
+            "category": "Snack"
+          },
+          "id": 1
+        },
+        {
+          "jumlah": 5,
+          "total_harga": 17500,
+          "product": {
+            "id": 16,
+            "nama": "Soda",
+            "harga": 3500,
+            "gambar": "soda.jpg",
+            "category": "Minuman"
+          },
+          "id": 2
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 3000,
+          "product": {
+            "id": 17,
+            "nama": "Froot Tea",
+            "harga": 3000,
+            "gambar": "froot-tea.jpg",
+            "category": "Minuman"
+          },
+          "id": 3
+        }
+      ],
+      "id": 3
+    },
+    {
+      "pemesan": "Secondta",
+      "catatan": "",
+      "harga_total": 13500,
+      "bayar": true,
+      "tanggal": 6,
+      "bulan": 3,
+      "tahun": 2022,
+      "items": [
+        {
+          "jumlah": "4",
+          "total_harga": 10000,
+          "product": {
+            "id": 15,
+            "nama": "Air Mineral",
+            "harga": 2500,
+            "gambar": "water.jpg",
+            "category": "Minuman"
+          },
+          "id": 1
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 1000,
+          "product": {
+            "id": 18,
+            "nama": "Es Teh",
+            "harga": 1000,
+            "gambar": "es-teh.jpg",
+            "category": "Minuman"
+          },
+          "id": 2
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 1000,
+          "product": {
+            "id": 6,
+            "nama": "Chicken Balls",
+            "harga": 1000,
+            "gambar": "cock-balls.jpg",
+            "category": "Snack"
+          },
+          "id": 3
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 1500,
+          "product": {
+            "id": 13,
+            "nama": "Pensil",
+            "harga": 1500,
+            "gambar": "pensil.jpg",
+            "category": "Peralatan"
+          },
+          "id": 4
+        }
+      ],
+      "id": 4
+    },
+    {
+      "pemesan": "Lala",
+      "harga_total": 12000,
+      "bayar": true,
+      "tanggal": 6,
+      "bulan": 11,
+      "tahun": 2022,
+      "items": [
+        {
+          "jumlah": 4,
+          "total_harga": 6000,
+          "product": {
+            "id": 3,
+            "nama": "Bolu",
+            "harga": 1500,
+            "gambar": "bolu.jpg",
+            "category": "Snack"
+          },
+          "id": 2
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 3000,
+          "product": {
+            "id": 11,
+            "nama": "Jangka",
+            "harga": 3000,
+            "gambar": "jangka.jpg",
+            "category": "Peralatan"
+          },
+          "id": 3
+        },
+        {
+          "jumlah": 2,
+          "total_harga": 3000,
+          "product": {
+            "id": 12,
+            "nama": "Pulpen",
+            "harga": 1500,
+            "gambar": "pulpen.jpg",
+            "category": "Peralatan"
+          },
+          "id": 4
+        }
+      ],
+      "id": 5
+    },
+    {
+      "pemesan": "Yanto",
+      "catatan": "",
+      "harga_total": 28000,
+      "bayar": true,
+      "tanggal": 6,
+      "bulan": 5,
+      "tahun": 2022,
+      "items": [
+        {
+          "jumlah": 4,
+          "total_harga": 12000,
+          "product": {
+            "id": 8,
+            "nama": "Buku Gambar",
+            "harga": 3000,
+            "gambar": "buku-gambar.jpg",
+            "category": "Peralatan"
+          },
+          "id": 1
+        },
         {
           "jumlah": 1,
           "total_harga": 1000,
@@ -201,43 +462,384 @@
             "nama": "Permen",
             "harga": 1000,
             "gambar": "permen.jpg",
-            "category": {
-              "id": 1,
-              "nama": "Snack"
-            }
+            "category": "Snack"
+          },
+          "id": 3
+        },
+        {
+          "jumlah": 5,
+          "total_harga": 15000,
+          "product": {
+            "id": 14,
+            "nama": "Susu Kotak",
+            "harga": 3000,
+            "gambar": "susu-kotak.jpg",
+            "category": "Minuman"
+          },
+          "id": 4
+        }
+      ],
+      "id": 6
+    },
+    {
+      "pemesan": "Juan",
+      "catatan": "",
+      "harga_total": 29500,
+      "bayar": true,
+      "tanggal": 6,
+      "bulan": 6,
+      "tahun": 2022,
+      "items": [
+        {
+          "jumlah": 5,
+          "total_harga": 15000,
+          "product": {
+            "id": 14,
+            "nama": "Susu Kotak",
+            "harga": 3000,
+            "gambar": "susu-kotak.jpg",
+            "category": "Minuman"
+          },
+          "id": 4
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 1000,
+          "product": {
+            "id": 6,
+            "nama": "Chicken Balls",
+            "harga": 1000,
+            "gambar": "cock-balls.jpg",
+            "category": "Snack"
+          },
+          "id": 5
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 1500,
+          "product": {
+            "id": 12,
+            "nama": "Pulpen",
+            "harga": 1500,
+            "gambar": "pulpen.jpg",
+            "category": "Peralatan"
+          },
+          "id": 6
+        },
+        {
+          "jumlah": 4,
+          "total_harga": 12000,
+          "product": {
+            "id": 11,
+            "nama": "Jangka",
+            "harga": 3000,
+            "gambar": "jangka.jpg",
+            "category": "Peralatan"
+          },
+          "id": 7
+        }
+      ],
+      "id": 7
+    },
+    {
+      "pemesan": "Anto",
+      "catatan": "",
+      "harga_total": 26500,
+      "bayar": true,
+      "tanggal": 6,
+      "bulan": 7,
+      "tahun": 2022,
+      "items": [
+        {
+          "jumlah": 2,
+          "total_harga": 2000,
+          "product": {
+            "id": 18,
+            "nama": "Es Teh",
+            "harga": 1000,
+            "gambar": "es-teh.jpg",
+            "category": "Minuman"
           },
           "id": 1
         },
         {
+          "jumlah": 3,
+          "total_harga": 10500,
+          "product": {
+            "id": 16,
+            "nama": "Soda",
+            "harga": 3500,
+            "gambar": "soda.jpg",
+            "category": "Minuman"
+          },
+          "id": 2
+        },
+        {
+          "jumlah": 7,
+          "total_harga": 14000,
+          "product": {
+            "id": 5,
+            "nama": "Bang Bang",
+            "harga": 2000,
+            "gambar": "bang-bang.jpg",
+            "category": "Snack"
+          },
+          "id": 3
+        }
+      ],
+      "id": 8
+    },
+    {
+      "pemesan": "Anto",
+      "catatan": "",
+      "harga_total": 26500,
+      "bayar": true,
+      "tanggal": 6,
+      "bulan": 8,
+      "tahun": 2022,
+      "items": [
+        {
           "jumlah": 2,
-          "total_harga": 3000,
+          "total_harga": 2000,
+          "product": {
+            "id": 18,
+            "nama": "Es Teh",
+            "harga": 1000,
+            "gambar": "es-teh.jpg",
+            "category": "Minuman"
+          },
+          "id": 1
+        },
+        {
+          "jumlah": 3,
+          "total_harga": 10500,
+          "product": {
+            "id": 16,
+            "nama": "Soda",
+            "harga": 3500,
+            "gambar": "soda.jpg",
+            "category": "Minuman"
+          },
+          "id": 2
+        },
+        {
+          "jumlah": 7,
+          "total_harga": 14000,
+          "product": {
+            "id": 5,
+            "nama": "Bang Bang",
+            "harga": 2000,
+            "gambar": "bang-bang.jpg",
+            "category": "Snack"
+          },
+          "id": 3
+        }
+      ],
+      "id": 9
+    },
+    {
+      "pemesan": "Toni",
+      "catatan": "",
+      "harga_total": 25000,
+      "bayar": true,
+      "tanggal": 6,
+      "bulan": 9,
+      "tahun": 2022,
+      "items": [
+        {
+          "jumlah": 6,
+          "total_harga": 9000,
           "product": {
             "id": 9,
             "nama": "Buku Tulis",
             "harga": 1500,
             "gambar": "buku-tulis.jpg",
-            "category": {
-              "id": 3,
-              "nama": "Peralatan"
-            }
+            "category": "Peralatan"
+          },
+          "id": 6
+        },
+        {
+          "jumlah": 4,
+          "total_harga": 6000,
+          "product": {
+            "id": 12,
+            "nama": "Pulpen",
+            "harga": 1500,
+            "gambar": "pulpen.jpg",
+            "category": "Peralatan"
+          },
+          "id": 7
+        },
+        {
+          "jumlah": 5,
+          "total_harga": 10000,
+          "product": {
+            "id": 10,
+            "nama": "Penggaris",
+            "harga": 2000,
+            "gambar": "penggaris.jpg",
+            "category": "Peralatan"
+          },
+          "id": 8
+        }
+      ],
+      "id": 10
+    },
+    {
+      "pemesan": "Yanti",
+      "catatan": "",
+      "harga_total": 16500,
+      "bayar": true,
+      "tanggal": 6,
+      "bulan": 10,
+      "tahun": 2022,
+      "items": [
+        {
+          "jumlah": 1,
+          "total_harga": 3000,
+          "product": {
+            "id": 11,
+            "nama": "Jangka",
+            "harga": 3000,
+            "gambar": "jangka.jpg",
+            "category": "Peralatan"
+          },
+          "id": 1
+        },
+        {
+          "jumlah": 3,
+          "total_harga": 10500,
+          "product": {
+            "id": 16,
+            "nama": "Soda",
+            "harga": 3500,
+            "gambar": "soda.jpg",
+            "category": "Minuman"
+          },
+          "id": 2
+        },
+        {
+          "jumlah": 3,
+          "total_harga": 3000,
+          "product": {
+            "id": 4,
+            "nama": "Gorengan",
+            "harga": 1000,
+            "gambar": "gorengan.jpg",
+            "category": "Snack"
+          },
+          "id": 3
+        }
+      ],
+      "id": 11
+    },
+    {
+      "pemesan": "Dono",
+      "catatan": "",
+      "harga_total": 34500,
+      "bayar": true,
+      "tanggal": 6,
+      "bulan": 11,
+      "tahun": 2022,
+      "items": [
+        {
+          "jumlah": 5,
+          "total_harga": 7500,
+          "product": {
+            "id": 13,
+            "nama": "Pensil",
+            "harga": 1500,
+            "gambar": "pensil.jpg",
+            "category": "Peralatan"
+          },
+          "id": 1
+        },
+        {
+          "jumlah": 8,
+          "total_harga": 12000,
+          "product": {
+            "id": 12,
+            "nama": "Pulpen",
+            "harga": 1500,
+            "gambar": "pulpen.jpg",
+            "category": "Peralatan"
+          },
+          "id": 2
+        },
+        {
+          "jumlah": "15",
+          "total_harga": 15000,
+          "product": {
+            "id": 4,
+            "nama": "Gorengan",
+            "harga": 1000,
+            "gambar": "gorengan.jpg",
+            "category": "Snack"
+          },
+          "id": 3
+        }
+      ],
+      "id": 12
+    },
+    {
+      "pemesan": "Helmi",
+      "catatan": "",
+      "harga_total": 1000,
+      "bayar": true,
+      "tanggal": 11,
+      "bulan": 0,
+      "tahun": 2022,
+      "items": [
+        {
+          "jumlah": 1,
+          "total_harga": 1000,
+          "product": {
+            "id": 4,
+            "nama": "Gorengan",
+            "harga": 1000,
+            "gambar": "gorengan.jpg",
+            "category": "Snack"
+          },
+          "id": 1
+        }
+      ],
+      "id": 13
+    },
+    {
+      "pemesan": "Riri",
+      "catatan": "",
+      "harga_total": 15000,
+      "bayar": true,
+      "tanggal": 12,
+      "bulan": 4,
+      "tahun": 2022,
+      "items": [
+        {
+          "jumlah": 2,
+          "total_harga": 6000,
+          "product": {
+            "id": 8,
+            "nama": "Buku Gambar",
+            "harga": 3000,
+            "gambar": "buku-gambar.jpg",
+            "category": "Peralatan"
+          },
+          "id": 1
+        },
+        {
+          "jumlah": 3,
+          "total_harga": 9000,
+          "product": {
+            "id": 11,
+            "nama": "Jangka",
+            "harga": 3000,
+            "gambar": "jangka.jpg",
+            "category": "Peralatan"
           },
           "id": 2
         }
       ],
-      "id": 1
-    }
-  ],
-  "details": [
-    {
-      "item_id": 11,
-      "nama": "Jangka",
-      "harga": 3000,
-      "gambar": "jangka.jpg",
-      "category": {
-        "id": 3,
-        "nama": "Peralatan"
-      },
-      "id": 1
+      "id": 14
     }
   ]
 }

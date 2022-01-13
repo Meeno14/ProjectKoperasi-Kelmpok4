@@ -2,10 +2,13 @@ import { useState } from "react";
 import Box from "@mui/material/Box";
 import Stepper from "@mui/material/Stepper";
 import Step from "@mui/material/Step";
+import Step1 from "./step1";
+import Step2 from "./step2";
+import Step3 from "./step3";
+import Step4 from "./step4";
 import StepLabel from "@mui/material/StepLabel";
 import { styled } from "@mui/material/styles";
 import PropTypes from "prop-types";
-import StepperContent from "./steppercontent";
 import StepConnector, {
   stepConnectorClasses,
 } from "@mui/material/StepConnector";
@@ -92,6 +95,28 @@ export default function HorizontalLinearStepper() {
       borderRadius: 1,
     },
   }));
+
+  const handleBack = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  };
+  const handleNext = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+  };
+
+  function StepperContent() {
+    switch (activeStep) {
+      case 0:
+        return <Step1 handleNext={handleNext} handleBack={handleBack} />
+      case 1:
+        return <Step2 handleNext={handleNext} handleBack={handleBack} />
+      case 2:
+        return <Step3 handleNext={handleNext} handleBack={handleBack} />
+
+      default:
+        return <Step4 />
+    }
+  }
+
   return (
     <Box sx={{ width: "100%" }}>
       <Stepper
@@ -112,10 +137,7 @@ export default function HorizontalLinearStepper() {
           );
         })}
       </Stepper>
-      <StepperContent
-        setActiveStep={setActiveStep}
-        activeStep={activeStep}
-      />
+      <StepperContent />
     </Box>
   );
 }

@@ -1,24 +1,26 @@
 import axios from "axios";
 import React, { Component } from "react";
 import swal from "sweetalert";
-import Carousel from "../components/carousel";
-import Menus from "../components/menus";
-import { API_URL } from "../utils/constants";
+import Categories from "../components/costumer/category";
+import { API_URL } from "../components/utils/constants";
 
 export class home extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       items: [],
-      choose: "Snack",
-      keranjangs: [],
+      categories: [],
     };
   }
   componentDidMount() {
     axios.get(API_URL + "products").then((res) => {
       const items = res.data;
       this.setState({ items });
+    });
+    const categoryName = localStorage.getItem("choosedCategory");
+    axios.get(API_URL + "categories?nama=" + categoryName).then((res) => {
+      const categories = res.data;
+      this.setState({ categories });
     });
   }
 
@@ -74,14 +76,14 @@ export class home extends Component {
     );
   };
   render() {
-    const { items } = this.state;
+    const { items, categories } = this.state;
     return (
       <div>
-        <Carousel />
-        <Menus
+        <Categories
           itemDetail={this.itemDetail}
           masukKeranjang={this.masukKeranjang}
           items={items}
+          categories={categories}
         />
       </div>
     );
