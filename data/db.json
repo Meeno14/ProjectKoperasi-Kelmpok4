@@ -177,7 +177,7 @@
     },
     {
       "nama": "Peralatan",
-      "icon": "fas fa-blind",
+      "icon": "fas fa-pencil-ruler",
       "id": 3
     }
   ],
@@ -840,6 +840,42 @@
         }
       ],
       "id": 14
+    },
+    {
+      "pemesan": "Roni",
+      "catatan": "",
+      "harga_total": 6000,
+      "bayar": false,
+      "tanggal": 14,
+      "bulan": 0,
+      "tahun": 2022,
+      "items": [
+        {
+          "jumlah": 2,
+          "total_harga": 3000,
+          "product": {
+            "id": 3,
+            "nama": "Bolu",
+            "harga": 1500,
+            "gambar": "bolu.jpg",
+            "category": "Snack"
+          },
+          "id": 1
+        },
+        {
+          "jumlah": 3,
+          "total_harga": 3000,
+          "product": {
+            "id": 4,
+            "nama": "Gorengan",
+            "harga": 1000,
+            "gambar": "gorengan.jpg",
+            "category": "Snack"
+          },
+          "id": 2
+        }
+      ],
+      "id": 15
     }
   ]
 }

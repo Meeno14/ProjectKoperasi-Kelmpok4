@@ -4,7 +4,7 @@ const carousel = ({ carousel }) => {
   return (
     <Carousel variant="dark" style={{ marginTop: "-5%" }}>
       {carousel.map((image) => (
-        <Carousel.Item>
+        <Carousel.Item key={image.id}>
           <img
             className="d-block w-100 car-img"
             src={"Assets/" + image.category + "/" + image.image}

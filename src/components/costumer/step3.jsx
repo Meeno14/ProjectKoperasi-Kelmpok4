@@ -75,7 +75,7 @@ export class step3 extends Component {
           </thead>
           <tbody>
             {this.state.keranjangs.map((keranjang) => (
-              <tr className="border-top border-bottom order-list">
+              <tr className="border-top border-bottom order-list" key={keranjang.id}>
                 <td>{keranjang.product.nama} x {keranjang.jumlah}</td>
                 <td>Rp. {numberWithCommas(keranjang.total_harga)}</td>
               </tr>

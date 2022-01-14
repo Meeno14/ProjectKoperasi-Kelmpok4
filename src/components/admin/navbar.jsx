@@ -53,7 +53,6 @@ export class navbar extends Component {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
           </button>
           <div className="d-flex ms-auto my-3 my-lg-0">
             <Button variant="dark" className="float-end btn-outline-light"

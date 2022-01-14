@@ -123,7 +123,7 @@ export class detailincome extends Component {
           </thead>
           <tbody>
             {items.map((item, index) => (
-              <tr>
+              <tr key={index}>
                 <td>{index + 1}</td>
                 <td>{item.nama}</td>
                 <td>Rp. {numberWithCommas(item.harga)}</td>
